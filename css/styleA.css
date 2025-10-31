@@ -1,0 +1,110 @@
+* {
+    background-color: #FFF8E7; /* Cream background */
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #800020;
+    text-align: center;
+}
+
+
+header img{
+    width: 150px;
+    text-align: center;
+    height: auto;
+    margin: 0;
+    border-radius: 80%;
+}
+
+
+.navigation{
+    padding: 15px;
+    text-align: center;
+}
+
+.navigation p {
+    margin: 0;
+    
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: bold;
+    color: maroon;
+}
+
+.navigation a:hover {
+    color: #0d0d0c; 
+}
+
+.images.up, .images.down {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(rgba(50, 8, 18, 0.888), black);
+}
+
+.images img {
+    max-width: 150px; /* Increased size for more engaging images */
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    border-radius: 70%;
+}
+
+.images img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(128, 0, 32, 0.3); /* Burgundy-tinted shadow */
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 35px;
+    text-align: center;
+    border-radius: 25%;
+}
+
+.about h1 {
+    color: #800020; /* Burgundy */
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.about a {
+    color: #800020; /* Burgundy */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about a:hover {
+    color: #170f11; /* Slightly lighter burgundy for hover */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    
+}
+
+footer a {
+    text-decoration: none;
+    color: maroon;
+}
+
+footer a:hover {
+    color: #120f10;
+}

@@ -1,0 +1,162 @@
+* {
+    background-color: #FFF8E7; /* Cream background */
+    color: #333;
+    font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hdng{
+    color: #A0002A;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header img {
+    max-width: 200px; /* Logo size */
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 80%;
+}
+
+header img:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+header h1 {
+    color: #FFF8E7; /* Cream */
+    font-size: 2.5em;
+    margin: 15px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-in;
+}
+
+.banner.vid {
+    max-width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.banner.vid video {
+    width: 60%;
+    max-width: 950px; /* Constrain video width */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(128, 0, 32, 0.2); /* Burgundy-tinted shadow */
+    transition: transform 0.3s ease;
+}
+
+.banner.vid video:hover {
+    transform: scale(1.02); /* Subtle zoom on hover */
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* White form background for contrast */
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(128, 0, 32, 0.1); 
+    text-align: left;
+} 
+
+
+form label {
+    color: #800020; /* Burgundy */
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #800020; /* Burgundy border */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #FFF8E7; /* Cream input background */
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #A0002A; /* Lighter burgundy on focus */
+    box-shadow: 0 0 5px rgba(128, 0, 32, 0.3);
+    outline: none;
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resize only */
+}
+
+form button {
+    background-color: #800020; /* Burgundy */
+    color: #FFF8E7; /* Cream */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #A0002A; /* Lighter burgundy on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+footer {
+    
+    color: #FFF8E7; /* Cream */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+footer a {
+    color: maroon; /* Cream */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: rgb(21, 20, 20); /* Lighter cream for hover */
+}
+
+/* Fade-in animation for headings */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    form {
+        padding: 15px;
+    }
+    .banner.vid video {
+        max-width: 100%;
+    }
+}

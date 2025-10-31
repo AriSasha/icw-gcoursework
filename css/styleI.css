@@ -1,0 +1,113 @@
+*{
+    background-color: #FFF8E7; /* Cream background */
+    color: #333; 
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+
+}
+
+header {
+    
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 200px; /* Logo size */
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 80%;
+}
+
+header img:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+div {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+div h1 {
+    color: #800020; /* Burgundy */
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    animation: fadeIn 1s ease-in;
+}
+
+div p {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+div h2 {
+    color: #800020; /* Burgundy */
+    font-size: 1.8em;
+    margin: 20px 0 10px;
+    font-weight: 600;
+}
+
+div img {
+    max-width: 250px; /* Larger images for visual impact */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(128, 0, 32, 0.2); /* Burgundy-tinted shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 6px 15px rgba(128, 0, 32, 0.3);
+}
+
+footer {
+    color: black; /* Cream */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+footer a {
+    color: black; /* Cream */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: maroon; /* Lighter cream for hover */
+}
+
+/* Fade-in animation for headings */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    div h1 {
+        font-size: 2.2em;
+    }
+    div h2 {
+        font-size: 1.5em;
+    }
+    div img {
+        max-width: 200px;
+    }
+}
